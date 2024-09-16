@@ -46,8 +46,18 @@
             int celsius = int.Parse(Console.ReadLine());
 
             double fht = celsius * 1.8 + 32;
-            Console.WriteLine($"{celsius} grader i celsius konverteras till {fht} grader i farenheight");
+            Console.WriteLine($"{celsius} grader i celsius konverteras till {fht} grader i farenheight\n");
 
+            Console.WriteLine("Nu blir det Mad Libs!\n");
+            Console.Write("Ange ett substantiv: ");
+            string noun = Console.ReadLine();
+            Console.Write("Ange ett verb: ");
+            string verb = Console.ReadLine();
+            Console.Write("Ange ett adjektiv: ");
+            string adjective = Console.ReadLine();
+
+            Console.WriteLine($"\nDet var en gång en {noun}! Den skulle ut och plocka blåbär för att sen gå hem och {verb} dem! " +
+                $"Det blev som det blev och när den kom hem och gjorde det så blev den {adjective}! SAGAN SLUT!");
         }
     }
 }
